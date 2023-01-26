@@ -31,8 +31,8 @@ eureka:
 
 management:
   endpoints:
-    web:
-      exposure:
-        include: *
     refresh:
       enabled: true
+    web:
+      exposure:
+        include: '*'

@@ -34,3 +34,5 @@ management:
     web:
       exposure:
         include: *
+    refresh:
+      enabled: true

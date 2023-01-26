@@ -29,3 +29,8 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 10
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *

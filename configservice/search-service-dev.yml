@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: search-service
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+  instance:
+    lease-renewal-interval-in-seconds: 30
+
+server:
+  port: 9001
+
+
+
+management:
+  endpoints:
+    refresh:
+      enabled: true
+    web:
+      exposure:
+        include: '*'

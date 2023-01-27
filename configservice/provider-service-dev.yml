@@ -20,7 +20,7 @@ spring:
 
 
 server:
-  port: 9123
+  port: 9124
 
 
 eureka:

@@ -12,3 +12,12 @@ eureka:
 
   instance:
     lease-expiration-duration-in-seconds: 20
+
+
+management:
+  endpoints:
+    refresh:
+      enabled: true
+    web:
+      exposure:
+        include: '*'

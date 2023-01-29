@@ -14,14 +14,14 @@ spring:
             - Path=/search/**
 
         - id: detailsModule
-            uri: lb://details-service
-            predicates:
-              - Path=/details/**
+          uri: lb://details-service
+          predicates:
+            - Path=/details/**
 
         - id: provideModule
-            uri: lb://provider-service
-            predicates:
-              - Path=/provider/**
+          uri: lb://provider-service
+          predicates:
+            - Path=/provider/**
 
       # open lb
       discovery:
